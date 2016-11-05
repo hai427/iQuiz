@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		9DA429C91DCD574D0031D952 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA429C81DCD574D0031D952 /* AppDelegate.swift */; };
-		9DA429CB1DCD574D0031D952 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA429CA1DCD574D0031D952 /* ViewController.swift */; };
 		9DA429CE1DCD574D0031D952 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA429CC1DCD574D0031D952 /* Main.storyboard */; };
 		9DA429D01DCD574D0031D952 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA429CF1DCD574D0031D952 /* Assets.xcassets */; };
 		9DA429D31DCD574D0031D952 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA429D11DCD574D0031D952 /* LaunchScreen.storyboard */; };
 		9DA429DE1DCD574D0031D952 /* iQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA429DD1DCD574D0031D952 /* iQuizTests.swift */; };
 		9DA429E91DCD574D0031D952 /* iQuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA429E81DCD574D0031D952 /* iQuizUITests.swift */; };
+		9DA429F71DCD58DE0031D952 /* iQuizTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA429F61DCD58DE0031D952 /* iQuizTableViewController.swift */; };
+		9DA429F91DCD5BB60031D952 /* iQuizTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA429F81DCD5BB60031D952 /* iQuizTableViewCell.swift */; };
+		9DA429FD1DCD65730031D952 /* marvel.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DA429FA1DCD65730031D952 /* marvel.png */; };
+		9DA429FE1DCD65730031D952 /* math.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DA429FB1DCD65730031D952 /* math.png */; };
+		9DA429FF1DCD65730031D952 /* science.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DA429FC1DCD65730031D952 /* science.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		9DA429C51DCD574D0031D952 /* iQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA429C81DCD574D0031D952 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9DA429CA1DCD574D0031D952 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9DA429CD1DCD574D0031D952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DA429CF1DCD574D0031D952 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DA429D21DCD574D0031D952 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,11 @@
 		9DA429E41DCD574D0031D952 /* iQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA429E81DCD574D0031D952 /* iQuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iQuizUITests.swift; sourceTree = "<group>"; };
 		9DA429EA1DCD574D0031D952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DA429F61DCD58DE0031D952 /* iQuizTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iQuizTableViewController.swift; sourceTree = "<group>"; };
+		9DA429F81DCD5BB60031D952 /* iQuizTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iQuizTableViewCell.swift; sourceTree = "<group>"; };
+		9DA429FA1DCD65730031D952 /* marvel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = marvel.png; path = Assets.xcassets/marvel.png; sourceTree = "<group>"; };
+		9DA429FB1DCD65730031D952 /* math.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = math.png; path = Assets.xcassets/math.png; sourceTree = "<group>"; };
+		9DA429FC1DCD65730031D952 /* science.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = science.png; path = Assets.xcassets/science.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +106,15 @@
 			isa = PBXGroup;
 			children = (
 				9DA429C81DCD574D0031D952 /* AppDelegate.swift */,
-				9DA429CA1DCD574D0031D952 /* ViewController.swift */,
 				9DA429CC1DCD574D0031D952 /* Main.storyboard */,
+				9DA429FA1DCD65730031D952 /* marvel.png */,
+				9DA429FB1DCD65730031D952 /* math.png */,
+				9DA429FC1DCD65730031D952 /* science.png */,
 				9DA429CF1DCD574D0031D952 /* Assets.xcassets */,
 				9DA429D11DCD574D0031D952 /* LaunchScreen.storyboard */,
 				9DA429D41DCD574D0031D952 /* Info.plist */,
+				9DA429F61DCD58DE0031D952 /* iQuizTableViewController.swift */,
+				9DA429F81DCD5BB60031D952 /* iQuizTableViewCell.swift */,
 			);
 			path = iQuiz;
 			sourceTree = "<group>";
@@ -232,8 +244,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DA429FD1DCD65730031D952 /* marvel.png in Resources */,
+				9DA429FE1DCD65730031D952 /* math.png in Resources */,
 				9DA429D31DCD574D0031D952 /* LaunchScreen.storyboard in Resources */,
 				9DA429D01DCD574D0031D952 /* Assets.xcassets in Resources */,
+				9DA429FF1DCD65730031D952 /* science.png in Resources */,
 				9DA429CE1DCD574D0031D952 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +274,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DA429CB1DCD574D0031D952 /* ViewController.swift in Sources */,
+				9DA429F71DCD58DE0031D952 /* iQuizTableViewController.swift in Sources */,
+				9DA429F91DCD5BB60031D952 /* iQuizTableViewCell.swift in Sources */,
 				9DA429C91DCD574D0031D952 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
