@@ -10,6 +10,12 @@ import UIKit
 
 class iQuizTableViewController: UITableViewController {
     
+    @IBAction func alert(_ sender: AnyObject) {
+        let alert = UIAlertController(title: "Settings go here", message: "ayy lmao", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     let topicModel = ["Mathematics", "Marvel Super Heroes", "Science"]
     let descModel = ["Math problem stuff", "Show off your superhero knowledge", "R u a science master?"]
     let imgModel = ["math", "marvel", "science"]

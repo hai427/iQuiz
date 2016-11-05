@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--iQuiz-->
         <scene sceneID="WqP-FU-g0D">
             <objects>
                 <tableViewController id="kJk-Qi-XSY" customClass="iQuizTableViewController" customModule="iQuiz" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="76"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CzY-QV-TEG" id="rYM-qk-cq8">
-                                    <frame key="frameInset" width="375" height="75"/>
+                                    <frame key="frameInset" width="375" height="76"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3VU-Yo-HVh">
@@ -54,7 +54,21 @@
                             <outlet property="delegate" destination="kJk-Qi-XSY" id="vPv-1X-JH4"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="ajM-K7-12b"/>
+                    <navigationItem key="navigationItem" title="iQuiz" id="ajM-K7-12b">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="b4x-IJ-zN3">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Y8w-1o-y3I">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Settings"/>
+                                <connections>
+                                    <action selector="alert:" destination="kJk-Qi-XSY" eventType="touchUpInside" id="Jyi-uI-rvZ"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <action selector="alert:" destination="kJk-Qi-XSY" id="o55-hd-QPX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Fv-FH-Cc0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
