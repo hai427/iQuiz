@@ -10,6 +10,9 @@ import UIKit
 
 class QuestionViewController: UIViewController {
 
+    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet var answerButtons: [UIButton]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +24,13 @@ class QuestionViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func submitAnswer(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func backToMenu(_ sender: UIButton) {
+        
+    }
 
     /*
     // MARK: - Navigation
