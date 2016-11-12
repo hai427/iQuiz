@@ -10,6 +10,8 @@ import UIKit
 
 class QuestionViewController: UIViewController {
 
+    var answerSelected = false
+    
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet var answerButtons: [UIButton]!
     
@@ -25,11 +27,23 @@ class QuestionViewController: UIViewController {
     }
     
     @IBAction func submitAnswer(_ sender: UIButton) {
-        
+        if answerSelected {
+            performSegue(withIdentifier: "toAnswer", sender: self)
+        }
     }
     
     @IBAction func backToMenu(_ sender: UIButton) {
-        
+        performSegue(withIdentifier: "toMenu", sender: self)
+    }
+    
+    @IBAction func selectAnswer(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.cyan
+        for button in answerButtons {
+            if button != sender {
+                button.backgroundColor = UIColor.lightGray
+            }
+        }
+        answerSelected = true
     }
 
     /*

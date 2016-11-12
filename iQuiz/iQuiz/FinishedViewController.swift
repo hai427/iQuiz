@@ -21,6 +21,9 @@ class FinishedViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func backToMenu(_ sender: UIButton) {
+        performSegue(withIdentifier: "toMenu", sender: self)
+    }
 
     /*
     // MARK: - Navigation

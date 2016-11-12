@@ -9,7 +9,7 @@
 import UIKit
 
 class AnswerViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +21,13 @@ class AnswerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func submitAnswer(_ sender: UIButton) {
+        performSegue(withIdentifier: "toResult", sender: self)
+    }
+    
+    @IBAction func backToMenu(_ sender: UIButton) {
+        performSegue(withIdentifier: "toMenu", sender: self)
+    }
 
     /*
     // MARK: - Navigation
