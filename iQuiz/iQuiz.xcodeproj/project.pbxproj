@@ -18,6 +18,9 @@
 		9DA429FD1DCD65730031D952 /* marvel.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DA429FA1DCD65730031D952 /* marvel.png */; };
 		9DA429FE1DCD65730031D952 /* math.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DA429FB1DCD65730031D952 /* math.png */; };
 		9DA429FF1DCD65730031D952 /* science.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DA429FC1DCD65730031D952 /* science.png */; };
+		9DC7ACA21DD53D21003FBA6F /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7ACA11DD53D21003FBA6F /* QuestionViewController.swift */; };
+		9DC7ACA41DD53D3F003FBA6F /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7ACA31DD53D3F003FBA6F /* AnswerViewController.swift */; };
+		9DC7ACA61DD53D97003FBA6F /* FinishedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7ACA51DD53D97003FBA6F /* FinishedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		9DA429FA1DCD65730031D952 /* marvel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = marvel.png; path = Assets.xcassets/marvel.png; sourceTree = "<group>"; };
 		9DA429FB1DCD65730031D952 /* math.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = math.png; path = Assets.xcassets/math.png; sourceTree = "<group>"; };
 		9DA429FC1DCD65730031D952 /* science.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = science.png; path = Assets.xcassets/science.png; sourceTree = "<group>"; };
+		9DC7ACA11DD53D21003FBA6F /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		9DC7ACA31DD53D3F003FBA6F /* AnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
+		9DC7ACA51DD53D97003FBA6F /* FinishedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,9 @@
 				9DA429D41DCD574D0031D952 /* Info.plist */,
 				9DA429F61DCD58DE0031D952 /* iQuizTableViewController.swift */,
 				9DA429F81DCD5BB60031D952 /* iQuizTableViewCell.swift */,
+				9DC7ACA11DD53D21003FBA6F /* QuestionViewController.swift */,
+				9DC7ACA31DD53D3F003FBA6F /* AnswerViewController.swift */,
+				9DC7ACA51DD53D97003FBA6F /* FinishedViewController.swift */,
 			);
 			path = iQuiz;
 			sourceTree = "<group>";
@@ -274,8 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DC7ACA61DD53D97003FBA6F /* FinishedViewController.swift in Sources */,
 				9DA429F71DCD58DE0031D952 /* iQuizTableViewController.swift in Sources */,
 				9DA429F91DCD5BB60031D952 /* iQuizTableViewCell.swift in Sources */,
+				9DC7ACA41DD53D3F003FBA6F /* AnswerViewController.swift in Sources */,
+				9DC7ACA21DD53D21003FBA6F /* QuestionViewController.swift in Sources */,
 				9DA429C91DCD574D0031D952 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,6 +533,7 @@
 				9DA429EF1DCD574D0031D952 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9DA429F01DCD574D0031D952 /* Build configuration list for PBXNativeTarget "iQuizTests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +542,7 @@
 				9DA429F21DCD574D0031D952 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9DA429F31DCD574D0031D952 /* Build configuration list for PBXNativeTarget "iQuizUITests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +551,7 @@
 				9DA429F51DCD574D0031D952 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
