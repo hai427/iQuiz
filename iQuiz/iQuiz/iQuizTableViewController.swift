@@ -10,6 +10,7 @@ import UIKit
 
 class iQuizTableViewController: UITableViewController {
     
+    
     @IBAction func alert(_ sender: AnyObject) {
         let alert = UIAlertController(title: "Settings go here", message: "ayy lmao", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
@@ -23,6 +24,9 @@ class iQuizTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let url = Bundle.main.url(forResource: "Data", withExtension: "json")
+        _ = NSData(contentsOf: url!)
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
