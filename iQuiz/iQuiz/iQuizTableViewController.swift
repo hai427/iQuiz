@@ -24,14 +24,31 @@ class iQuizTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let url = Bundle.main.url(forResource: "Data", withExtension: "json")
-        _ = NSData(contentsOf: url!)
+        let url = URL(string: "https://tednewardsandbox.site44.com/questions.json")!
+        _ = NSData(contentsOf: url)
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        let requestURL: NSURL = NSURL(string: "https://tednewardsandbox.site44.com/questions.json")!
+        let urlRequest: NSMutableURLRequest = NSMutableURLRequest(url: requestURL as URL)
+        let session = URLSession.shared
+        let task = session.dataTask(with: urlRequest as URLRequest) {
+            (data, response, error) -> Void in
+            
+            let httpResponse = response as! HTTPURLResponse
+            let statusCode = httpResponse.statusCode
+            
+            if (statusCode == 200) {
+                print("Everyone is fine, file downloaded successfully.")
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data!, options:.allowFragments)
+                }
+                catch {
+                    print("Error with Json: \(error)")
+                }
+                
+            }
+        }
+        
+        task.resume()
     }
 
     override func didReceiveMemoryWarning() {
