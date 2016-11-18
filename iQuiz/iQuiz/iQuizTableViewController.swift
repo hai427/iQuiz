@@ -35,16 +35,19 @@ class iQuizTableViewController: UITableViewController {
             
             let httpResponse = response as! HTTPURLResponse
             let statusCode = httpResponse.statusCode
+            let path = Bundle.main.path(forResource: "quiz", ofType: "txt")!
             
             if (statusCode == 200) {
                 print("Everyone is fine, file downloaded successfully.")
                 do {
-                    let json = try JSONSerialization.jsonObject(with: data!, options:.allowFragments)
+                    let json = try JSONSerialization.jsonObject(with: data!, options:.allowFragments) //reads from url
+                    NSData(data: data!).write(toFile: path, atomically: true)
                 }
                 catch {
                     print("Error with Json: \(error)")
                 }
-                
+            } else {
+                var content = NSData(data: data!).write(toFile: path, atomically: true) //reads from local
             }
         }
         
